@@ -2,12 +2,13 @@ Summary:	Network performance measurement tool
 Summary(pl):	Narzêdzie do szacowania wydajno¶ci sieci
 Name:		iperf
 Version:	1.7.0
-Release:	1
+Release:	2
 License:	BSD-like
 Group:		Networking
 Source0:	http://dast.nlanr.net/Projects/Iperf/%{name}-%{version}-source.tar.gz
 # Source0-md5:	3e4aea85822bcf10ed14040f4b26bd26
 URL:		http://dast.nlanr.net/Projects/Iperf/
+BuildRequires:	automake
 BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,6 +40,7 @@ pasmo, opó¼nienia i straty datagramów.
 
 %build
 cd cfg
+cp -f /usr/share/automake/config.* .
 %configure
 cd ..
 %{__make}
