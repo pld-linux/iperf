@@ -2,7 +2,7 @@ Summary:	Network performance measurement tool
 Summary(pl):	Narzêdzie do szacowania wydajno¶ci sieci
 Name:		iperf
 Version:	1.7.0
-Release:	0.1
+Release:	1
 License:	BSD-like
 Group:		Networking
 Source0:	http://dast.nlanr.net/Projects/Iperf/%{name}-%{version}-source.tar.gz
