@@ -8,6 +8,7 @@ Group:		Networking
 Source0:	http://dast.nlanr.net/Projects/Iperf/%{name}-%{version}-source.tar.gz
 # Source0-md5:	3e4aea85822bcf10ed14040f4b26bd26
 URL:		http://dast.nlanr.net/Projects/Iperf/
+BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,7 +38,10 @@ pasmo, opó¼nienia i straty datagramów.
 %setup -q
 
 %build
-make
+cd cfg
+%configure
+cd ..
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
