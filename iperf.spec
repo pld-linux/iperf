@@ -37,7 +37,7 @@ pasmo, opó¼nienia i straty datagramów.
 %setup -q
 
 %build
-%{__make}
+make
 
 %install
 rm -rf $RPM_BUILD_ROOT
