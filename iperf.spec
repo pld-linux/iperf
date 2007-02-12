@@ -1,5 +1,5 @@
 Summary:	Network performance measurement tool
-Summary(pl):	Narzêdzie do szacowania wydajno¶ci sieci
+Summary(pl.UTF-8):   NarzÄ™dzie do szacowania wydajnoÅ›ci sieci
 Name:		iperf
 Version:	1.7.0
 Release:	2
@@ -23,17 +23,17 @@ Iperf is a tool to measure maximum TCP bandwidth, allowing the tuning
 of various parameters and UDP characteristics. Iperf reports
 bandwidth, delay jitter, datagram loss.
 
-%description -l pl
-Iperf to narzêdzie do szacowania wydajno¶ci sieci.
+%description -l pl.UTF-8
+Iperf to narzÄ™dzie do szacowania wydajnoÅ›ci sieci.
 
-O ile narzêdzia do okre¶lania wydajno¶ci sieci, takie jak ttcp,
-istniej±, to wiêkszo¶æ z nich jest bardzo stara i ma myl±ce opcje.
-Iperf zosta³ stworzony jako wspó³czesna alternatywa do szacowania
-wydajno¶ci pasma TCP i UDP.
+O ile narzÄ™dzia do okreÅ›lania wydajnoÅ›ci sieci, takie jak ttcp,
+istniejÄ…, to wiÄ™kszoÅ›Ä‡ z nich jest bardzo stara i ma mylÄ…ce opcje.
+Iperf zostaÅ‚ stworzony jako wspÃ³Å‚czesna alternatywa do szacowania
+wydajnoÅ›ci pasma TCP i UDP.
 
-Iperf to narzêdzie okre¶laj±ce maksymalne pasmo TCP, umo¿liwiaj±ce
-dostrajanie ró¿nych parametrów i charakterystyk UDP. Iperf raportuje
-pasmo, opó¼nienia i straty datagramów.
+Iperf to narzÄ™dzie okreÅ›lajÄ…ce maksymalne pasmo TCP, umoÅ¼liwiajÄ…ce
+dostrajanie rÃ³Å¼nych parametrÃ³w i charakterystyk UDP. Iperf raportuje
+pasmo, opÃ³Åºnienia i straty datagramÃ³w.
 
 %prep
 %setup -q
