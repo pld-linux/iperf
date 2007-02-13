@@ -1,5 +1,5 @@
 Summary:	Network performance measurement tool
-Summary(pl.UTF-8):   Narzędzie do szacowania wydajności sieci
+Summary(pl.UTF-8):	Narzędzie do szacowania wydajności sieci
 Name:		iperf
 Version:	1.7.0
 Release:	2
