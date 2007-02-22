@@ -1,12 +1,12 @@
 Summary:	Network performance measurement tool
 Summary(pl.UTF-8):	Narzędzie do szacowania wydajności sieci
 Name:		iperf
-Version:	1.7.0
+Version:	2.0.2
 Release:	2
 License:	BSD-like
 Group:		Networking
-Source0:	http://dast.nlanr.net/Projects/Iperf/%{name}-%{version}-source.tar.gz
-# Source0-md5:	3e4aea85822bcf10ed14040f4b26bd26
+Source0:	http://dast.nlanr.net/Projects/Iperf2.0/%{name}-%{version}.tar.gz
+# Source0-md5:	bb658aba58a5af0356f5b1342dfe8f53
 URL:		http://dast.nlanr.net/Projects/Iperf/
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
@@ -39,22 +39,17 @@ pasmo, opóźnienia i straty datagramów.
 %setup -q
 
 %build
-cd cfg
-cp -f /usr/share/automake/config.* .
 %configure
-cd ..
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
-
-install iperf $RPM_BUILD_ROOT%{_bindir}
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README KNOWN_PROBLEMS
+%doc README doc/*html
 %attr(755,root,root) %{_bindir}/iperf
