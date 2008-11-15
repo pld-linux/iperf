@@ -1,13 +1,13 @@
 Summary:	Network performance measurement tool
 Summary(pl.UTF-8):	Narzędzie do szacowania wydajności sieci
 Name:		iperf
-Version:	2.0.2
+Version:	2.0.4
 Release:	1
 License:	BSD-like
 Group:		Networking
-Source0:	http://dast.nlanr.net/Projects/Iperf2.0/%{name}-%{version}.tar.gz
-# Source0-md5:	bb658aba58a5af0356f5b1342dfe8f53
-URL:		http://dast.nlanr.net/Projects/Iperf/
+Source0:	http://dl.sourceforge.net/iperf/%{name}-%{version}.tar.gz
+# Source0-md5:	8c5bc14cc2ea55f18f22afe3c23e3dcb
+URL:		http://iperf.sourceforge.net/
 BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -52,3 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README doc/*.html doc/*.gif
 %attr(755,root,root) %{_bindir}/iperf
+%{_mandir}/man1/*
