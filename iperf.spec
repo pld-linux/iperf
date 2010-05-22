@@ -4,7 +4,7 @@ Name:		iperf
 Version:	2.0.4
 Release:	1
 License:	BSD-like
-Group:		Networking
+Group:		Networking/Utilities
 Source0:	http://dl.sourceforge.net/iperf/%{name}-%{version}.tar.gz
 # Source0-md5:	8c5bc14cc2ea55f18f22afe3c23e3dcb
 URL:		http://iperf.sourceforge.net/
