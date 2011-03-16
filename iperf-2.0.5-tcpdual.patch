@@ -1,0 +1,22 @@
+diff -NarU5 iperf-2.0.5.orig/src/Client.cpp iperf-2.0.5/src/Client.cpp
+--- iperf-2.0.5.orig/src/Client.cpp	2010-08-22 09:25:13.000289100 -0400
++++ iperf-2.0.5/src/Client.cpp	2010-04-01 16:23:17.000000000 -0400
+@@ -210,14 +210,14 @@
+     int adjust = 0; 
+ 
+     char* readAt = mBuf;
+ 
+ #if HAVE_THREAD
+-    if ( !isUDP( mSettings ) ) {
+-	RunTCP();
+-	return;
+-    }
++//    if ( !isUDP( mSettings ) ) {
++//	RunTCP();
++//	return;
++//    }
+ #endif
+     
+     // Indicates if the stream is readable 
+     bool canRead = true, mMode_Time = isModeTime( mSettings ); 
+ 
