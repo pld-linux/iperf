@@ -8,6 +8,7 @@ Group:		Networking/Utilities
 Source0:	http://downloads.sourceforge.net/iperf/%{name}-%{version}.tar.gz
 # Source0-md5:	44b5536b67719f4250faed632a3cd016
 Patch0:		%{name}-2.0.5-tcpdual.patch
+Patch1:		%{name}-Werror.patch
 URL:		http://iperf.sourceforge.net/
 BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -38,6 +39,7 @@ pasmo, opóźnienia i straty datagramów.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 %configure
