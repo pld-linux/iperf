@@ -1,3 +1,4 @@
+#
 Summary:	Network performance measurement tool
 Summary(pl.UTF-8):	Narzędzie do szacowania wydajności sieci
 Name:		iperf
